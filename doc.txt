@@ -1,0 +1,9 @@
+//creating xml form db
+php doctrine.php orm:convert-mapping --from-database xml xml/
+
+
+// creating entity class form xml
+php doctrine.php orm:generate-entities entities/
+
+// creating db from entity
+php doc.php orm:schema-tool:create
